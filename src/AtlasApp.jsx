@@ -1,13 +1,24 @@
-import { Home } from "./pages/Home"
 
+import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
+import Home from "./pages/Home";  // Asegúrate de que la ruta sea correcta
+import ChapterI from "./pages/ChapterI";
 
-const AtlasApp = () => {
+const App = () => {
+  return (
+    <Router>
+      <div>
+        {/* Agregar Links para la navegación */}
+    
 
-    return (
-        <>
-            <Home/>
-        </>
-    )
-}
+        {/* Definir las rutas */}
+        <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="/capitulo-1" element={<ChapterI />} />
+          {/* Otras rutas aquí */}
+        </Routes>
+      </div>
+    </Router>
+  );
+};
 
-export default AtlasApp
+export default App;

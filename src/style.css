@@ -52,6 +52,7 @@ p{
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    top: 0;
 }
 
 .content {
@@ -126,7 +127,9 @@ p{
 
 
 .atlas-button-explorar{
-   
+  text-decoration: none;
+   outline: none;
+   text-decoration: none;
     padding: 1rem 2rem; 
     border: 3px solid; 
     border-image-source: linear-gradient(90deg, #2AE3FF 0%, #0CF814 100%); 
@@ -183,7 +186,7 @@ p{
     left: 20px;
     padding: 10px 20px;
     background-color: #3498db;
-    color: white;
+    color: red;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -206,3 +209,8 @@ p{
     display: flex;
     align-items: center;
   }
+
+.link{
+  outline: none;
+  box-shadow: none;
+}
